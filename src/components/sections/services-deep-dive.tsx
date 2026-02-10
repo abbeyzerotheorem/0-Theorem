@@ -53,14 +53,19 @@ const services = [
   },
   {
     title: "UI/UX & Visual Design",
-    description: "User-centered interfaces and visual graphics that align with your goals.",
+    description: "Designing user-centered interfaces and visual assets that integrate seamlessly with web development projects. I combine UI/UX principles with full-stack development knowledge, ensuring designs are not just visually appealing but technically feasible and optimized for performance.",
     icon: <PenTool className="w-8 h-8" />,
     includes: [
-      "Wireframes & prototypes in Figma",
-      "UI design focused on clarity and usability",
-      "Visual asset creation to support your brand",
+      "Wireframes, prototypes, and UI layouts in Figma",
+      "Accessible, responsive designs that translate cleanly to code",
+      "Visual assets supporting branding and digital products",
+      "Iterative design based on feedback for optimal user experience",
     ],
-    builtFor: []
+    builtFor: [
+      "Websites and web applications",
+      "Landing pages and interactive platforms",
+      "Small businesses and startups",
+    ]
   }
 ];
 
