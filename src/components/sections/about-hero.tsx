@@ -21,23 +21,22 @@ export default function AboutHero() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
           <div ref={photoRef} className="lg:col-span-1 flex justify-center">
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80">
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl shadow-primary/20">
               <Image
                 src="https://i.pinimg.com/1200x/1c/2c/a8/1c2ca8837147cd8176756a3397db2131.jpg"
                 alt="Abiodun Abbey Aina"
-                width={400}
-                height={400}
-                className="rounded-full object-cover border-4 border-primary/20 shadow-2xl shadow-primary/20"
+                fill
+                sizes="(max-width: 640px) 256px, 320px"
+                className="object-cover"
                 data-ai-hint="professional man portrait"
                 priority
               />
-              <div className="absolute inset-0 rounded-full border-primary/50 animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full border border-primary/50 animate-pulse"></div>
             </div>
           </div>
-          <div className="lg:col-span-2 text-center lg:text-left mt-16">
+          <div className="lg:col-span-2 text-center lg:text-left">
             <div className="overflow-hidden">
-                <h1 ref={headlineRef} className="text-4xl md:text-6xl font-headline font-bold"
-                style={{WebkitTextStroke: '0.3px #4361EE'}}>
+                <h1 ref={headlineRef} className="text-4xl md:text-6xl font-headline font-bold">
                 The Mind Behind the Theorem
                 </h1>
             </div>
