@@ -292,11 +292,10 @@ export default function PricingTiers() {
             ))}
           </TabsList>
 
-          <AnimatePresence mode="wait">
+          <AnimatePresence>
             {Object.entries(pricingData).map(([title, data]) => (
               <TabsContent key={title} value={title}>
                 <motion.div
-                  key={title}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
