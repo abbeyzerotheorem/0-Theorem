@@ -8,16 +8,22 @@ import { GraduationCap } from 'lucide-react';
 
 const experience = [
   {
+    role: "Intern Graphic Designer",
+    company: "OURSMEDIA",
+    date: "Jul 2025 – Present",
+    description: "Designing marketing assets and digital graphics, improving visual communication for online campaigns and print materials.",
+  },
+  {
+    role: "Full-Stack Developer Intern",
+    company: "DevelopersHub Corporation©",
+    date: "May 2025 – Aug 2025",
+    description: "Built and contributed to full-stack web applications using modern frontend and backend technologies. Developed responsive user interfaces with React, Next.js, TypeScript, Tailwind CSS. Implemented backend functionality using Firebase, Supabase, and MongoDB",
+  },
+  {
     role: "Web Developer Internship",
     company: "GAOTek Inc.",
     date: "Jun–Nov 2024",
     description: "Built and maintained websites using HTML, CSS, JavaScript, PHP, and WordPress, contributing to real-world client projects and honing development best practices.",
-  },
-  {
-    role: "Intern Graphic Designer",
-    company: "OURSMEDIA",
-    date: "Aug 2024–Present",
-    description: "Designing marketing assets and digital graphics, improving visual communication for online campaigns and print materials.",
   },
   {
     role: "UI/UX Design",
