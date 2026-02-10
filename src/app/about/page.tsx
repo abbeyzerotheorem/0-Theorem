@@ -62,17 +62,16 @@ export default function AboutPage() {
         <section id="about-intro" className="mb-32">
             <div className="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-12">
                 <div className="lg:col-span-1 flex justify-center mb-8 lg:mb-0">
-                    <div className="relative w-64 h-64 sm:w-80 sm:h-80">
+                    <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl shadow-primary/20">
                         <Image
                             src="https://i.pinimg.com/1200x/1c/2c/a8/1c2ca8837147cd8176756a3397db2131.jpg"
                             alt="Abiodun Abbey Aina"
-                            width={400}
-                            height={400}
-                            className="rounded-full object-cover border-4 border-primary/20 shadow-2xl shadow-primary/20"
+                            fill
+                            className="object-cover"
                             data-ai-hint="professional man portrait"
                             priority
                         />
-                         <div className="absolute inset-0 rounded-full border-primary/50 animate-pulse"></div>
+                         <div className="absolute inset-0 rounded-full border border-primary/50 animate-pulse"></div>
                     </div>
                 </div>
                 <div className="lg:col-span-2 text-center lg:text-left">
