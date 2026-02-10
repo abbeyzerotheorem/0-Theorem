@@ -15,20 +15,16 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     id: "portfolio-1",
-    title: "Project Alpha",
-    category: "Web Application",
+    title: "WanderUnion",
+    category: "UI/UX Design",
+    description: "UI/UX design for a travel platform prototype, focused on simplifying user onboarding and improving usability.",
     href: "/portfolio"
   },
   {
     id: "portfolio-2",
-    title: "Project Beta",
-    category: "UI/UX Design",
-    href: "/portfolio"
-  },
-  {
-    id: "portfolio-3",
-    title: "Project Gamma",
-    category: "Mobile App",
+    title: "Mike Hairstylist",
+    category: "WordPress Website",
+    description: "Designed and built a responsive WordPress landing page to showcase services and improve online presence.",
     href: "/portfolio"
   },
 ];
@@ -60,12 +56,12 @@ export default function Portfolio() {
     <section id="portfolio" ref={sectionRef} className="py-20 sm:py-32 bg-card/20">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl font-headline font-bold">Featured Work</h2>
+            <h2 className="text-4xl font-headline font-bold">Selected Work</h2>
             <p className="mt-4 text-lg text-muted-foreground">
                 A glimpse into the digital experiences we've crafted for our clients.
             </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project, index) => {
             const imageData = PlaceHolderImages.find(p => p.id === project.id);
             return (
@@ -74,7 +70,7 @@ export default function Portfolio() {
                   {imageData && (
                     <Image
                       src={imageData.imageUrl}
-                      alt={imageData.description}
+                      alt={project.title}
                       width={800}
                       height={600}
                       data-ai-hint={imageData.imageHint}
@@ -85,6 +81,7 @@ export default function Portfolio() {
                   <div className="absolute inset-0 p-6 flex flex-col justify-end translate-y-1/4 group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
                       <p className="text-sm text-secondary">{project.category}</p>
                       <h3 className="text-2xl font-bold font-headline text-white mt-1">{project.title}</h3>
+                      <p className="text-white/80 text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">{project.description}</p>
                   </div>
                   <div className="absolute top-4 right-4 p-2 bg-background/50 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">
                     <ArrowUpRight className="h-6 w-6 text-white" />
@@ -97,7 +94,7 @@ export default function Portfolio() {
         <div className="mt-16 text-center">
             <Button asChild size="lg" variant="outline" className="group">
                 <Link href="/portfolio">
-                    View All Work
+                    View Full Portfolio
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                 </Link>
             </Button>
