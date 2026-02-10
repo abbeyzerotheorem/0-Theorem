@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -21,17 +22,17 @@ const WordPressIcon = (props: React.SVGProps<SVGSVGElement>) => (
 const services = [
   {
     title: "Web Development",
-    description: "Responsive, performance-focused websites and apps built from the ground up.",
+    description: "End-to-end web applications built with both frontend and backend technologies, focused on performance, scalability, and real-world functionality.",
     icon: <Code2 className="w-8 h-8" />,
     includes: [
-      "Fast, responsive layout using HTML, CSS, JavaScript",
-      "Dynamic interactions with React",
-      "Clean, maintainable code ready for deployment",
+      "Responsive interfaces using HTML, CSS, JavaScript, React",
+      "Backend services with Supabase (PostgreSQL), Firebase, or MongoDB, including authentication, data storage, and API integration.",
+      "Clean, maintainable code ready for production deployment",
     ],
     builtFor: [
       "Startups",
       "Business websites",
-      "Web apps",
+      "Full-stack web applications",
     ]
   },
   {
