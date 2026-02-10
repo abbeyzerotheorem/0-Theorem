@@ -8,6 +8,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { ThemeProvider } from '@/components/layout/theme-provider';
 import { inter, poppins } from '@/app/fonts';
+import { ScrollToTop } from '@/components/ui/scroll-to-top';
 
 export default function RootLayout({
   children,
@@ -29,6 +30,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <Toaster />
+        <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
