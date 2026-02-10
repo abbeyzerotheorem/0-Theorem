@@ -30,12 +30,12 @@ export default function HeroSection() {
             ref={headlineRef}
             className="text-5xl md:text-6xl font-headline font-bold py-4 text-foreground"
           >
-            Zero Theorem | Web Developer & Designer Studio
+            Full-Stack Web Developer building fast, user-focused digital products
           </h1>
         </div>
         <div className="overflow-hidden">
           <p ref={subheadlineRef} className="mt-4 text-lg md:text-xl max-w-3xl text-muted-foreground">
-            Crafting responsive, user-focused websites and apps for startups and small businesses.
+            I design and develop responsive websites and web applications using React, WordPress, and modern backend tools like Supabase, Firebase, and MongoDB.
           </p>
         </div>
         <div ref={ctaRef} className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
