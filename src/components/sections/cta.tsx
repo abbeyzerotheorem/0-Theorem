@@ -79,15 +79,15 @@ export default function Cta() {
     <section id="cta" className="py-20 sm:py-32 overflow-hidden">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-headline font-bold max-w-3xl mx-auto">
-          Ready to build something extraordinary?
+          Let’s Build Something
         </h2>
         <p className="mt-6 text-lg text-muted-foreground max-w-xl mx-auto">
-          Let's turn your vision into a reality. We're here to help you create a digital solution that stands out.
+          Looking for a website or web app that’s clean, fast, and built with care?
         </p>
         <div className="mt-10">
           <Button size="lg" asChild className="group relative text-lg px-12 py-8" style={{ willChange: 'transform' }}>
-            <Link ref={buttonRef} href="mailto:contact@zerotheorem.com">
-              <span className="relative z-10">Start a Project</span>
+            <Link ref={buttonRef} href="/contact">
+              <span className="relative z-10">Get in Touch</span>
                <div ref={particleContainerRef} className="absolute inset-0 overflow-hidden rounded-md"></div>
             </Link>
           </Button>

@@ -82,7 +82,7 @@ export default function Header() {
                 ))}
                 <ThemeToggle />
                 <Button asChild>
-                    <Link href="/contact" onClick={(e) => handleLinkClick('/contact', e)}>Start a Project</Link>
+                    <Link href="/contact" onClick={(e) => handleLinkClick('/contact', e)}>Get in Touch</Link>
                 </Button>
             </nav>
 
@@ -121,7 +121,7 @@ export default function Header() {
                                 <Link href="/contact" onClick={(e) => {
                                     handleLinkClick('/contact', e);
                                     setIsSheetOpen(false);
-                                }}>Start a Project</Link>
+                                }}>Get in Touch</Link>
                             </Button>
                         </nav>
                     </SheetContent>
