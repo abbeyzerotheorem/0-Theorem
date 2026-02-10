@@ -60,7 +60,7 @@ export default function AboutPage() {
       <main className="container mx-auto px-4 py-20 sm:py-32">
         {/* Intro Section */}
         <section id="about-intro" className="mb-32">
-            <div className="flex flex-col lg:grid lg:grid-cols-3 items-center lg:gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-12">
                 <div className="lg:col-span-1 flex justify-center mb-8 lg:mb-0">
                     <div className="relative w-64 h-64 sm:w-80 sm:h-80">
                         <Image
