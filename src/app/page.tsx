@@ -7,6 +7,7 @@ import Process from '@/components/sections/process';
 import Testimonials from '@/components/sections/testimonials';
 import Cta from '@/components/sections/cta';
 import { Metadata } from 'next';
+import AboutPreview from '@/components/sections/about-preview';
 
 export const metadata: Metadata = {
   title: {
@@ -59,6 +60,7 @@ export default function Home() {
       <HeroSection />
       <TrustBar />
       <Services />
+      <AboutPreview />
       <Portfolio />
       <Process />
       <Testimonials />
