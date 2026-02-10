@@ -35,7 +35,7 @@ export default function HeroSection() {
         </div>
         <div className="overflow-hidden">
           <p ref={subheadlineRef} className="mt-4 text-lg md:text-xl max-w-3xl text-muted-foreground">
-            I design and develop responsive websites and web applications using React, WordPress, and modern backend tools like Supabase, Firebase, and MongoDB.
+            I design and develop responsive websites and web applications using React, WordPress, and modern backend tools like Supabase, Firebase, and MongoDB. From UI/UX design to backend integration, I help startups and businesses turn ideas into reliable, scalable web solutions.
           </p>
         </div>
         <div ref={ctaRef} className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
