@@ -1,7 +1,14 @@
 import { Marquee } from '@/components/ui/marquee';
 
 const logos = [
-  "Google", "Microsoft", "Spotify", "Airbnb", "Netflix", "Amazon", "Meta", "Apple"
+  "React",
+  "Next.js",
+  "WordPress",
+  "Supabase",
+  "Firebase",
+  "MongoDB",
+  "Figma",
+  "Git / GitHub",
 ];
 
 const PlaceholderLogo = ({ name }: { name: string }) => (
@@ -15,7 +22,7 @@ export default function TrustBar() {
     <section className="py-16 bg-background">
       <div className="container mx-auto">
         <p className="text-center text-sm font-bold tracking-wider uppercase text-muted-foreground mb-8">
-          Trusted by the world's leading companies
+          Powered by Modern Technologies
         </p>
         <div className="relative">
           <Marquee pauseOnHover className="[--duration:60s]">
