@@ -75,7 +75,7 @@ export default function AboutPage() {
                          <div className="absolute inset-0 rounded-full border-primary/50 animate-pulse"></div>
                     </div>
                 </div>
-                <div className="lg:col-span-2 text-center lg:text-left">
+                <div className="lg:col-span-2 text-center lg:text-left mt-8 lg:mt-0">
                     <h1 className="text-4xl md:text-5xl font-headline font-bold">About Me</h1>
                     <div className="mt-6 text-lg md:text-xl text-muted-foreground space-y-4">
                         <p>Hi, I’m Abiodun Aina, a Full-Stack Web Developer and UI/UX Designer with 2+ years of experience building responsive, user-focused websites and applications. I specialize in turning ideas into clean, functional, and engaging digital experiences.</p>
