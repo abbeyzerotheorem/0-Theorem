@@ -1,16 +1,58 @@
 
 import type { Metadata } from 'next';
 import Cta from '@/components/sections/cta';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+
 
 export const metadata: Metadata = {
   title: 'About Me',
   description: 'About Abiodun Aina, a Full-Stack Web Developer and UI/UX Designer with over 2 years of experience building responsive, user-focused websites and applications.',
 };
 
+const experiences = [
+    {
+        title: "Intern Graphic Designer",
+        company: "OURSMEDIA",
+        date: "Jul 2025–Present",
+        description: "Designing marketing assets and digital graphics, improving visual communication for online campaigns and print materials."
+    },
+    {
+        title: "Full-Stack Developer Intern",
+        company: "DevelopersHub Corporation©",
+        date: "May 2025 – Aug 2025",
+        description: "Built and contributed to full-stack web applications using modern frontend and backend technologies. Developed responsive user interfaces with React, Next.js, TypeScript, Tailwind CSS. Implemented backend functionality using Firebase, Supabase, and MongoDB"
+    },
+    {
+        title: "UI/UX Design",
+        company: "WanderUnion",
+        date: "Sept–Oct 2024",
+        description: "Developed a travel platform prototype, designing intuitive onboarding flows and high-fidelity screens in Figma, with smooth handoff to front-end implementation."
+    },
+    {
+        title: "Web Developer Internship",
+        company: "GAOTek Inc.",
+        date: "Jun–Nov 2024",
+        description: "Built and maintained websites using HTML, CSS, JavaScript, PHP, WordPress, contributing to real-world client projects and honing development best practices."
+    },
+    {
+        title: "WordPress Developer",
+        company: "Mike Hairstylist",
+        date: "Jan 2024",
+        description: "Built a responsive WordPress landing page to showcase services, optimized for usability and mobile devices."
+    }
+].sort((a, b) => new Date(b.date.split('–')[0]).getTime() - new Date(a.date.split('–')[0]).getTime());
+
+
 export default function AboutPage() {
   return (
     <div className="about-page-gradient">
-      <section className="py-20 sm:py-24 animate-fade-in">
+      <section className="py-20 sm:py-24">
         <div className="container mx-auto px-4 max-w-3xl">
           
           <h1 className="text-4xl md:text-5xl font-headline font-bold mb-6">About Me</h1>
@@ -24,33 +66,19 @@ export default function AboutPage() {
 
           <div className="space-y-12">
             <div>
-              <h2 className="text-3xl font-headline font-bold mb-6 border-b border-border/40 pb-3">Experience Highlights</h2>
+              <h2 className="text-3xl font-headline font-bold mb-8 border-b border-border/40 pb-3">Experience Highlights</h2>
               <div className="space-y-8">
-                <div>
-                  <h3 className="text-xl font-bold font-headline">Intern Graphic Designer <span className="text-primary">@ OURSMEDIA</span></h3>
-                  <p className="text-sm text-muted-foreground mb-2">Jul 2025–Present</p>
-                  <p className="text-foreground/80">Designing marketing assets and digital graphics, improving visual communication for online campaigns and print materials.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold font-headline">Full-Stack Developer Intern <span className="text-primary">@ DevelopersHub Corporation©</span></h3>
-                  <p className="text-sm text-muted-foreground mb-2">May 2025 – Aug 2025</p>
-                  <p className="text-foreground/80">Built and contributed to full-stack web applications using modern frontend and backend technologies. Developed responsive user interfaces with React, Next.js, TypeScript, Tailwind CSS. Implemented backend functionality using Firebase, Supabase, and MongoDB</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold font-headline">UI/UX Design <span className="text-primary">@ WanderUnion</span></h3>
-                  <p className="text-sm text-muted-foreground mb-2">Sept–Oct 2024</p>
-                  <p className="text-foreground/80">Developed a travel platform prototype, designing intuitive onboarding flows and high-fidelity screens in Figma, with smooth handoff to front-end implementation.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold font-headline">Web Developer Internship <span className="text-primary">@ GAOTek Inc.</span></h3>
-                  <p className="text-sm text-muted-foreground mb-2">Jun–Nov 2024</p>
-                  <p className="text-foreground/80">Built and maintained websites using HTML, CSS, JavaScript, PHP, WordPress, contributing to real-world client projects and honing development best practices.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold font-headline">WordPress Developer <span className="text-primary">@ Mike Hairstylist</span></h3>
-                  <p className="text-sm text-muted-foreground mb-2">Jan 2024</p>
-                  <p className="text-foreground/80">Built a responsive WordPress landing page to showcase services, optimized for usability and mobile devices.</p>
-                </div>
+                {experiences.map((exp) => (
+                    <Card key={exp.company} className="bg-card/50">
+                        <CardHeader>
+                            <CardTitle className="text-xl font-bold font-headline">{exp.title} <span className="text-primary">@ {exp.company}</span></CardTitle>
+                            <CardDescription>{exp.date}</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-foreground/80">{exp.description}</p>
+                        </CardContent>
+                    </Card>
+                ))}
               </div>
             </div>
 
