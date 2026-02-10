@@ -60,8 +60,8 @@ export default function AboutPage() {
       <main className="container mx-auto px-4 py-20 sm:py-32">
         {/* Intro Section */}
         <section id="about-intro" className="mb-32">
-            <div className="flex flex-col lg:grid lg:grid-cols-3 gap-12 items-center">
-                <div className="lg:col-span-1 flex justify-center">
+            <div className="flex flex-col lg:grid lg:grid-cols-3 items-center lg:gap-12">
+                <div className="lg:col-span-1 flex justify-center mb-8 lg:mb-0">
                     <div className="relative w-64 h-64 sm:w-80 sm:h-80">
                         <Image
                             src="https://i.pinimg.com/1200x/1c/2c/a8/1c2ca8837147cd8176756a3397db2131.jpg"
@@ -75,7 +75,7 @@ export default function AboutPage() {
                          <div className="absolute inset-0 rounded-full border-primary/50 animate-pulse"></div>
                     </div>
                 </div>
-                <div className="lg:col-span-2 text-center lg:text-left mt-8 lg:mt-0">
+                <div className="lg:col-span-2 text-center lg:text-left">
                     <h1 className="text-4xl md:text-5xl font-headline font-bold">About Me</h1>
                     <div className="mt-6 text-lg md:text-xl text-muted-foreground space-y-4">
                         <p>Hi, I’m Abiodun Aina, a Full-Stack Web Developer and UI/UX Designer with 2+ years of experience building responsive, user-focused websites and applications. I specialize in turning ideas into clean, functional, and engaging digital experiences.</p>
