@@ -11,7 +11,7 @@ const steps = [
   { name: 'Discover' },
   { name: 'Design' },
   { name: 'Develop' },
-  { name: 'Deploy' },
+  { name: 'Deliver' },
 ];
 
 export default function ProcessRefresher() {
@@ -42,7 +42,7 @@ export default function ProcessRefresher() {
     <section id="process-refresher" ref={sectionRef} className="py-20 sm:py-32">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-headline font-bold">Our Proven Method</h2>
+          <h2 className="text-4xl font-headline font-bold">How I Work</h2>
         </div>
         <div className="mt-16 relative">
           <div className="flex justify-between items-center">

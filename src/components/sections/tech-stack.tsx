@@ -13,18 +13,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const technologies = [
-  { name: "React", logo: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" },
-  { name: "Next.js", logo: "/logos/nextjs.svg" },
-  { name: "Node.js", logo: "https://img.icons8.com/color/96/nodejs.png" },
-  { name: "TypeScript", logo: "https://img.icons8.com/color/96/typescript.png" },
-  { name: "JavaScript", logo: "https://img.icons8.com/color/96/javascript--v1.png" },
-  { name: "Figma", logo: "https://img.icons8.com/color/96/figma--v1.png" },
-  { name: "Coreldraw", logo: "https://img.icons8.com/color/96/coreldraw.png" },
-  { name: "Photoshop", logo: "https://img.icons8.com/color/96/adobe-photoshop--v1.png" },
-  { name: "Firebase", logo: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-firebase-a-googles-mobile-platform-that-helps-you-quickly-develop-high-quality-apps-logo-color-tal-revivo.png" },
-  { name: "Wordpress", logo: "https://img.icons8.com/color/96/wordpress.png" },
-  { name: "HTML5", logo: "https://img.icons8.com/color/96/html-5--v1.png" },
-  { name: "CSS3", logo: "https://img.icons8.com/color/96/css3.png" },
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "WordPress", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" },
+  { name: "Figma", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+  { name: "Supabase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" },
+  { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+  { name: "Tailwind CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
 ];
 
 const TechLogo = ({ name, logo }: { name: string, logo: string }) => (
@@ -84,9 +80,9 @@ export default function TechStack() {
     <section id="tech-stack" ref={sectionRef} className="py-20 sm:py-32 bg-card/20">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl font-headline font-bold">Crafted With Precision</h2>
+          <h2 className="text-4xl font-headline font-bold">Tools & Technologies I Work With</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We master a curated set of modern tools and technologies to build high-quality digital products.
+            I master a curated set of modern tools to build high-quality digital products from concept to deployment.
           </p>
         </div>
         <div ref={gridRef} className="mt-16 flex flex-wrap justify-center items-center gap-8 max-w-4xl mx-auto">

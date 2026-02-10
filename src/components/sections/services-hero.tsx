@@ -18,12 +18,12 @@ export default function ServicesHero() {
       <div className="container mx-auto px-4">
         <div className="overflow-hidden pb-2">
             <h1 ref={headlineRef} className="text-5xl md:text-7xl font-headline font-bold">
-            Capabilities
+            What I Do
             </h1>
         </div>
         <div className="overflow-hidden">
             <p ref={subheadlineRef} className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-foreground/80">
-            We architect and animate digital experiences from the ground up. Our dual expertise in code and design ensures your product is not only beautiful but built on a rock-solid foundation.
+            At Zero Theorem, I specialize in building modern web solutions that are visually appealing, technically solid, and tailored to your goals. My approach blends design thinking with reliable engineering to deliver websites and applications that work — not just look good.
             </p>
         </div>
       </div>

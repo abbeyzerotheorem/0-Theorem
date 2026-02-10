@@ -1,157 +1,131 @@
-
 "use client";
 
-import { useEffect, useRef } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Code, Brush, Rocket, Megaphone } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Check, Code2, PenTool } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const WordPressIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 12c-3.5 0-6.5-2.2-6.5-5.5S8.5 1 12 1s6.5 2.2 6.5 5.5-3 5.5-6.5 5.5z"/>
+        <path d="M12 12c1.5 0 3.5 0 5.5 0 2.5 0 4.5 1.5 4.5 4s-2 4-4.5 4-3-1.5-4-3"/>
+        <path d="M12 12c-1.5 0-3.5 0-5.5 0-2.5 0-4.5 1.5-4.5 4s2 4 4.5 4 3-1.5 4-3"/>
+        <path d="M2.5 9c0-2 1.5-4 4-4"/>
+        <path d="M21.5 9c0-2-1.5-4-4-4"/>
+    </svg>
+)
+
 const services = [
   {
-    id: "custom-software-development",
-    title: "Custom Software Development",
-    description: "We build scalable, high-performance software solutions tailored to your specific business needs. From complex enterprise systems to nimble single-purpose applications, our code is clean, efficient, and built to last. We focus on robust architecture and future-proof technologies.",
-    icon: <Code className="w-8 h-8" />,
-    asset: "/code-mockup.svg",
-    align: "right"
+    title: "Web Development",
+    description: "Responsive, performance-focused websites and apps built from the ground up.",
+    icon: <Code2 className="w-8 h-8" />,
+    includes: [
+      "Fast, responsive layout using HTML, CSS, JavaScript",
+      "Dynamic interactions with React",
+      "Clean, maintainable code ready for deployment",
+    ],
+    builtFor: [
+      "Startups",
+      "Business websites",
+      "Web apps",
+    ]
   },
   {
-    id: "ui-ux-design",
-    title: "UI/UX Design",
-    description: "Our design process is human-centered. We conduct deep user research to create intuitive, engaging, and aesthetically pleasing interfaces. From wireframes to high-fidelity prototypes, we ensure your digital product is not just beautiful but also a joy to use.",
-    icon: <Brush className="w-8 h-8" />,
-    asset: "/design-mockup.svg",
-    align: "left"
-  },
-    {
-    id: "brand-identity",
-    title: "Brand Identity",
-    description: "A strong brand is more than a logo. We help you develop a cohesive brand identity that tells your story and connects with your audience. This includes logo design, color palettes, typography, and a comprehensive brand style guide to ensure consistency across all platforms.",
-    icon: <Megaphone className="w-8 h-8" />,
-    asset: "/brand-mockup.svg",
-    align: "right"
+    title: "WordPress Development",
+    description: "Custom WordPress sites and landing pages designed for visibility and usability.",
+    icon: <WordPressIcon className="w-8 h-8" />,
+    includes: [
+      "Custom themes or child themes",
+      "SEO-ready structure",
+      "Mobile-optimized, cross-device compatible",
+    ],
+    builtFor: [
+      "Personal brands",
+      "Small businesses",
+      "Blogs & content sites",
+    ]
   },
   {
-    id: "front-end-engineering",
-    title: "Front-End Engineering",
-    description: "We bring designs to life with pixel-perfect, responsive, and interactive front-end code. Specializing in modern frameworks like React and Next.js, we build user interfaces that are fast, accessible, and optimized for all devices.",
-    icon: <Rocket className="w-8 h-8" />,
-    asset: "/frontend-mockup.svg",
-    align: "left"
-  },
+    title: "UI/UX & Visual Design",
+    description: "User-centered interfaces and visual graphics that align with your goals.",
+    icon: <PenTool className="w-8 h-8" />,
+    includes: [
+      "Wireframes & prototypes in Figma",
+      "UI design focused on clarity and usability",
+      "Visual asset creation to support your brand",
+    ],
+    builtFor: []
+  }
 ];
 
-const AnimatedCode = () => (
-  <div className="bg-[#0D1117] border border-gray-700 rounded-lg p-4 h-full text-sm font-code overflow-hidden">
-    <pre>
-      <code className="text-[#c9d1d9]">
-        <span className="text-[#ff7b72]">const</span>{' '}
-        <span className="text-[#d2a8ff]">animateHero</span> = () => {'{'}<br />
-        {'  '}<span className="text-[#79c0ff]">gsap</span>.<span className="text-[#d2a8ff]">timeline</span>()
-        <br />
-        {'    '}.<span className="text-[#d2a8ff]">from</span>(<span className="text-[#a5d6ff]">'#headline'</span>, {'{'} <span className="text-[#79c0ff]">y</span>: <span className="text-[#F1F5F9]">50</span>, <span className="text-[#79c0ff]">opacity</span>: <span className="text-[#F1F5F9]">0</span>, <span className="text-[#79c0ff]">duration</span>: <span className="text-[#F1F5F9]">1</span> {'}'})
-        <br />
-        {'    '}.<span className="text-[#d2a8ff]">from</span>(<span className="text-[#a5d6ff]">'#subheadline'</span>, {'{'} <span className="text-[#79c0ff]">y</span>: <span className="text-[#F1F5F9]">30</span>, <span className="text-[#79c0ff]">opacity</span>: <span className="text-[#F1F5F9]">0</span> {'}'}, <span className="text-[#a5d6ff]">'-=0.7'</span>);
-        <br />
-        {'}'};
-      </code>
-    </pre>
-  </div>
-);
-
-const AnimatedDesign = () => (
-    <div className="relative w-full h-full">
-        <Image src="/design-mockup.svg" alt="UI/UX Design Mockup" fill className="object-contain" />
-    </div>
-);
-
-
 export default function ServicesDeepDive() {
-  const sectionsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const sectionRef = useRef(null);
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    sectionsRef.current.forEach((section) => {
-      if (section) {
-        const q = gsap.utils.selector(section);
-        const textCol = q('.text-col');
-        const assetCol = q('.asset-col');
-        const isRightAligned = section.dataset.align === 'right';
-
-        gsap.fromTo(textCol,
-          { x: isRightAligned ? -100 : 100, opacity: 0 },
-          {
-            x: 0,
-            opacity: 1,
-            duration: 1,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: section,
-              start: 'top 70%',
-            }
-          }
-        );
-        gsap.fromTo(assetCol,
-          { x: isRightAligned ? 100 : -100, opacity: 0 },
-          {
-            x: 0,
-            opacity: 1,
-            duration: 1,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: section,
-              start: 'top 70%',
-            }
-          }
-        );
+    gsap.fromTo(cardsRef.current, {
+      y: 50,
+      opacity: 0,
+    }, {
+      y: 0,
+      opacity: 1,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: 'top 80%',
       }
     });
   }, []);
 
-  const getAsset = (id: string) => {
-    switch (id) {
-        case 'custom-software-development':
-            return <AnimatedCode />;
-        case 'ui-ux-design':
-            return <div className="p-4 bg-card rounded-lg h-full"><Image src="https://i.pinimg.com/1200x/14/0f/da/140fda9f2dcaa23a084f0c1995d9e05f.jpg" alt="UI Design" width={600} height={400} className="rounded-md w-auto h-full" data-ai-hint="design mockup" /></div>;
-        case 'brand-identity':
-             return <div className="p-4 bg-card rounded-lg h-full"><Image src="https://i.pinimg.com/1200x/3a/0c/b7/3a0cb736d0974f4234afffdcaf25f0e3.jpg" alt="Brand Identity" width={600} height={400} className="rounded-md w-auto h-full" data-ai-hint="brand identity" priority /></div>;
-        case 'front-end-engineering':
-            return <div className="p-4 bg-card rounded-lg h-full"><Image src="https://i.pinimg.com/1200x/a5/34/da/a534daeebc0440a8c1fdc48a19ac5efe.jpg" alt="Frontend Engineering" width={600} height={400} className="rounded-md w-auto h-full" data-ai-hint="frontend code" priority /></div>;
-        default:
-            return null;
-    }
-  }
-
-
   return (
-    <section id="services-deep-dive" className="py-20 sm:py-32 space-y-32">
+    <section ref={sectionRef} id="services-deep-dive" className="py-20 sm:py-24">
       <div className="container mx-auto px-4">
-        {services.map((service, index) => (
-          <div 
-            key={service.id} 
-            id={service.id}
-            ref={el => sectionsRef.current[index] = el}
-            data-align={service.align}
-            className={`grid grid-cols-1 md:grid-cols-2 gap-16 items-center ${index > 0 ? 'mt-32' : ''}`}
-          >
-            <div className={`text-col ${service.align === 'right' ? 'md:order-1' : 'md:order-2'}`}>
-              <div className="flex items-center gap-4 mb-4">
-                  <div className="text-primary bg-primary/10 p-3 rounded-lg">{service.icon}</div>
-                  <h3 className="text-3xl font-headline font-bold">{service.title}</h3>
-              </div>
-              <p className="text-muted-foreground text-lg">
-                {service.description}
-              </p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div key={service.title} ref={el => cardsRef.current[index] = el} className="opacity-0">
+              <Card className="h-full bg-card/50 flex flex-col">
+                <CardHeader>
+                  <div className="flex items-center gap-4">
+                    <div className="bg-primary/10 text-primary p-3 rounded-lg">
+                      {service.icon}
+                    </div>
+                    <CardTitle className="font-headline text-2xl">{service.title}</CardTitle>
+                  </div>
+                  <p className="pt-4 text-muted-foreground">{service.description}</p>
+                </CardHeader>
+                <CardContent className="flex-grow flex flex-col gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3">What’s included:</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      {service.includes.map((item) => (
+                        <li key={item} className="flex items-start">
+                          <Check className="w-4 h-4 mr-3 mt-1 text-primary shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {service.builtFor.length > 0 && (
+                    <div>
+                      <h4 className="font-semibold mb-3">Built for:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {service.builtFor.map((item) => (
+                          <span key={item} className="text-xs font-medium bg-muted text-muted-foreground px-2 py-1 rounded-full">{item}</span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
             </div>
-            <div className={`asset-col ${service.align === 'right' ? 'md:order-2' : 'md:order-1'}`}>
-              {getAsset(service.id)}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
