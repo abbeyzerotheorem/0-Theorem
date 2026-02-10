@@ -37,17 +37,18 @@ const services = [
   },
   {
     title: "WordPress Development",
-    description: "Custom WordPress sites and landing pages designed for visibility and usability.",
+    description: "Custom WordPress websites built with performance, flexibility, and long-term maintainability in mind.",
     icon: <WordPressIcon className="w-8 h-8" />,
     includes: [
-      "Custom themes or child themes",
-      "SEO-ready structure",
-      "Mobile-optimized, cross-device compatible",
+      "Custom themes or child themes (not bloated templates)",
+      "Performance optimization and SEO-ready structure",
+      "Plugin configuration and content management setup",
+      "Secure, responsive, and easy-to-maintain builds",
     ],
     builtFor: [
-      "Personal brands",
-      "Small businesses",
-      "Blogs & content sites",
+        "Business websites",
+        "Landing pages",
+        "Content-driven platforms",
     ]
   },
   {
