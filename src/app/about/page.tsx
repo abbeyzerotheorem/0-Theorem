@@ -59,8 +59,8 @@ export default function AboutPage() {
     <div className="about-page-gradient">
       <main className="container mx-auto px-4 py-20 sm:py-32">
         {/* Intro Section */}
-        <section id="about-intro" className="mb-48">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+        <section id="about-intro" className="mb-32">
+            <div className="flex flex-col lg:grid lg:grid-cols-3 gap-12 items-center">
                 <div className="lg:col-span-1 flex justify-center">
                     <div className="relative w-64 h-64 sm:w-80 sm:h-80">
                         <Image
