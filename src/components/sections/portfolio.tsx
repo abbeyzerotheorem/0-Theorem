@@ -58,7 +58,7 @@ export default function Portfolio() {
         <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl font-headline font-bold">Selected Work</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-                A glimpse into the digital experiences we've crafted for our clients.
+                A glimpse into the digital experiences we've crafted.
             </p>
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
