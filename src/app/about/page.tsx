@@ -27,19 +27,24 @@ export default function AboutPage() {
               <h2 className="text-3xl font-headline font-bold mb-6 border-b border-border/40 pb-3">Experience Highlights</h2>
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-bold font-headline">Web Developer Internship <span className="text-primary">@ GAOTek Inc.</span></h3>
-                  <p className="text-sm text-muted-foreground mb-2">Jun–Nov 2024</p>
-                  <p className="text-foreground/80">Built and maintained websites using HTML, CSS, JavaScript, PHP, WordPress, contributing to real-world client projects and honing development best practices.</p>
+                  <h3 className="text-xl font-bold font-headline">Intern Graphic Designer <span className="text-primary">@ OURSMEDIA</span></h3>
+                  <p className="text-sm text-muted-foreground mb-2">Jul 2025–Present</p>
+                  <p className="text-foreground/80">Designing marketing assets and digital graphics, improving visual communication for online campaigns and print materials.</p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold font-headline">Intern Graphic Designer <span className="text-primary">@ OURSMEDIA</span></h3>
-                  <p className="text-sm text-muted-foreground mb-2">Aug 2025–Present</p>
-                  <p className="text-foreground/80">Designing marketing assets and digital graphics, improving visual communication for online campaigns and print materials.</p>
+                  <h3 className="text-xl font-bold font-headline">Full-Stack Developer Intern <span className="text-primary">@ DevelopersHub Corporation©</span></h3>
+                  <p className="text-sm text-muted-foreground mb-2">May 2025 – Aug 2025</p>
+                  <p className="text-foreground/80">Built and contributed to full-stack web applications using modern frontend and backend technologies. Developed responsive user interfaces with React, Next.js, TypeScript, Tailwind CSS. Implemented backend functionality using Firebase, Supabase, and MongoDB</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold font-headline">UI/UX Design <span className="text-primary">@ WanderUnion</span></h3>
                   <p className="text-sm text-muted-foreground mb-2">Sept–Oct 2024</p>
                   <p className="text-foreground/80">Developed a travel platform prototype, designing intuitive onboarding flows and high-fidelity screens in Figma, with smooth handoff to front-end implementation.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold font-headline">Web Developer Internship <span className="text-primary">@ GAOTek Inc.</span></h3>
+                  <p className="text-sm text-muted-foreground mb-2">Jun–Nov 2024</p>
+                  <p className="text-foreground/80">Built and maintained websites using HTML, CSS, JavaScript, PHP, WordPress, contributing to real-world client projects and honing development best practices.</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold font-headline">WordPress Developer <span className="text-primary">@ Mike Hairstylist</span></h3>
