@@ -12,12 +12,12 @@ import AboutPreview from '@/components/sections/about-preview';
 export const metadata: Metadata = {
   title: {
     template: '%s | Zero Theorem',
-    default: 'Zero Theorem | Digital Agency & Portfolio',
+    default: 'Zero Theorem | Web Developer & Designer Studio',
   },
-  description: 'Zero Theorem is a modern digital agency specializing in web development, UI/UX design, and branding. We solve the equation of digital excellence.',
+  description: 'Crafting responsive, user-focused websites and apps for startups and small businesses.',
   openGraph: {
-    title: 'Zero Theorem | Digital Agency & Portfolio',
-    description: 'Precise software engineering meets visionary graphic design.',
+    title: 'Zero Theorem | Web Developer & Designer Studio',
+    description: 'Crafting responsive, user-focused websites and apps for startups and small businesses.',
     url: 'https://zerotheorem.com', // Replace with your actual domain
     siteName: 'Zero Theorem',
     images: [
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zero Theorem | Digital Agency & Portfolio',
-    description: 'Precise software engineering meets visionary graphic design.',
+    title: 'Zero Theorem | Web Developer & Designer Studio',
+    description: 'Crafting responsive, user-focused websites and apps for startups and small businesses.',
      images: ['https://i.pinimg.com/1200x/78/a6/97/78a6977314662fe64f69898c4055c722.jpg'], // Replace with your actual Twitter image
   },
   icons: {

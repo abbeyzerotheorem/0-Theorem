@@ -28,14 +28,14 @@ export default function HeroSection() {
         <div className="overflow-hidden pb-2">
            <h1
             ref={headlineRef}
-            className="text-5xl md:text-7xl font-headline font-bold py-4 text-foreground"
+            className="text-5xl md:text-6xl font-headline font-bold py-4 text-foreground"
           >
-            We Solve the Equation of Digital Excellence.
+            Crafting responsive, user-focused websites and apps for startups and small businesses.
           </h1>
         </div>
         <div className="overflow-hidden">
           <p ref={subheadlineRef} className="mt-4 text-lg md:text-xl max-w-2xl text-muted-foreground">
-            Zero Theorem is where precise software engineering meets visionary graphic design to build foundational solutions.
+            A solo studio where precise software engineering meets visionary graphic design.
           </p>
         </div>
         <div ref={ctaRef} className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
