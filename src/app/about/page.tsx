@@ -67,6 +67,7 @@ export default function AboutPage() {
                             src="https://i.pinimg.com/1200x/1c/2c/a8/1c2ca8837147cd8176756a3397db2131.jpg"
                             alt="Abiodun Abbey Aina"
                             fill
+                            sizes="(max-width: 640px) 256px, 320px"
                             className="object-cover"
                             data-ai-hint="professional man portrait"
                             priority
