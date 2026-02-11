@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { X, ArrowLeft, ArrowRight, Github, ExternalLink, Dribbble } from 'lucide-react';
 import Link from 'next/link';
 
+
 const allProjects = [
   {
     id: "portfolio-1",
@@ -28,10 +29,10 @@ const allProjects = [
     id: "portfolio-2",
     title: "Fusion Hair",
     category: "UI/UX",
-    imageUrl: "https://i.pinimg.com/736x/2e/e0/a0/2ee0a0daf7642e938cc0a299b819bf60.jpg",
+    imageUrl: "https://i.pinimg.com/originals/e8/87/56/e8875691c95b356e87515b67c3b996b1.jpg",
     imageHint: "web dashboard",
     width: 800,
-    height: 1200,
+    height: 600,
     description: "A complete UI/UX redesign for a complex enterprise software. Through extensive user research and a new design system, we streamlined the user experience, resulting in a 75% reduction in user errors and a 90% user satisfaction score.",
     testimonial: "The team's dedication and attention to detail were phenomenal.",
     githubUrl: "#",
