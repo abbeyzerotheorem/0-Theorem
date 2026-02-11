@@ -108,7 +108,7 @@ export default function AboutPage() {
         </div>
         <div className="relative w-48 h-48 md:w-56 md:h-56 justify-self-center md:justify-self-end">
             <Image
-                src="/AbiodunAbbey.jpg"
+                src="/AbiodunAbbeyAina.jpg"
                 alt="Abiodun Aina"
                 fill
                 sizes="(max-width: 768px) 192px, 224px"

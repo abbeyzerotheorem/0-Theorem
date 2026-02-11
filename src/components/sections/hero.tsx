@@ -28,7 +28,7 @@ export default function HeroSection() {
             ref={headlineRef}
             className="text-5xl md:text-6xl font-headline font-bold py-4 text-foreground"
           >
-            Full-Stack Web Developer building fast, user-focused digital products
+            Full-Stack Web Developer & Designer Studio building fast, user-focused digital products
           </h1>
         </div>
         <div className="overflow-hidden">
