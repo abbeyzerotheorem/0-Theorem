@@ -207,7 +207,7 @@ export default function PortfolioGallery() {
                         <DialogHeader className="sr-only">
                           <DialogTitle>{selectedProject.title}</DialogTitle>
                           <DialogDescription>
-                            Detailed view of the {selectedProject.title} project, including the challenge, solution, and result.
+                            Detailed view of the project, including the challenge, solution, and result.
                           </DialogDescription>
                         </DialogHeader>
                         <div className="grid grid-cols-1 md:grid-cols-2 max-h-[90vh]">
