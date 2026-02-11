@@ -115,14 +115,14 @@ const PortfolioItem = ({ project, onOpen }: { project: typeof allProjects[0], on
         className="group relative cursor-pointer"
         onClick={() => onOpen(project)}
     >
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-lg relative aspect-[4/3]">
             <Image
                 src={project.imageUrl}
                 alt={project.title}
-                width={project.width}
-                height={project.height}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 data-ai-hint={project.imageHint}
-                className="w-full h-auto object-cover transform transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-90"
+                className="object-cover transform transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-90"
             />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
