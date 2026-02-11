@@ -216,6 +216,7 @@ export default function PortfolioGallery() {
                                     src={selectedProject.imageUrl}
                                     alt={selectedProject.title}
                                     fill
+                                    sizes="(max-width: 767px) 100vw, 50vw"
                                     className="object-contain"
                                 />
                             </div>
@@ -271,5 +272,3 @@ export default function PortfolioGallery() {
     </section>
   );
 }
-
-    

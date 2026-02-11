@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -90,6 +91,7 @@ const PostCard = ({ post }: { post: typeof posts[0] }) => {
                             src={imageData.imageUrl}
                             alt={post.title}
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             className="object-cover transform transition-transform duration-500 group-hover:scale-105"
                             data-ai-hint={post.imageHint}
                         />

@@ -44,6 +44,7 @@ export default function AboutPreview() {
                 src="/AbiodunAbbey.jpg"
                 alt="Abiodun Aina, founder of Zero Theorem"
                 fill
+                sizes="(max-width: 1023px) 80vw, 320px"
                 className="object-cover"
               />
             </div>
