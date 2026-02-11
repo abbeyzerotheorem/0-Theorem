@@ -10,10 +10,10 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: <Github className="w-8 h-8" />, href: "https://github.com/HARBBEY21166" },
-  { icon: <Twitter className="w-8 h-8" />, href: "https://x.com/ZeroTheorem01?t=GaBiYlmbrPNi9tkTmm1l_Q&s=09" },
-  { icon: <Linkedin className="w-8 h-8" />, href: "https://www.linkedin.com/in/abbey0" },
-  { icon: <Dribbble className="w-8 h-8" />, href: "https://dribbble.com/abbey0" },
+  { name: "Github", icon: <Github className="w-8 h-8" />, href: "https://github.com/HARBBEY21166" },
+  { name: "Twitter", icon: <Twitter className="w-8 h-8" />, href: "https://x.com/ZeroTheorem01?t=GaBiYlmbrPNi9tkTmm1l_Q&s=09" },
+  { name: "LinkedIn", icon: <Linkedin className="w-8 h-8" />, href: "https://www.linkedin.com/in/abbey0" },
+  { name: "Dribbble", icon: <Dribbble className="w-8 h-8" />, href: "https://dribbble.com/abbey0" },
 ];
 
 export default function Footer() {
@@ -54,8 +54,9 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-end">
             <h3 className="font-headline font-semibold mb-4 text-4xl">Connect</h3>
             <div className="flex space-x-4">
-              {socialLinks.map((link, index) => (
-                <Link key={index} href={link.href} className="text-muted-foreground hover:text-primary transition-colors">
+              {socialLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="text-muted-foreground hover:text-primary transition-colors">
+                  <span className="sr-only">{link.name}</span>
                   {link.icon}
                 </Link>
               ))}
