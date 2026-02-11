@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { AnimatePresence, motion } from 'framer-motion';
-import { X, ArrowLeft, ArrowRight, Github, ExternalLink } from 'lucide-react';
+import { X, ArrowLeft, ArrowRight, Github, ExternalLink, Dribbble } from 'lucide-react';
 import Link from 'next/link';
 
 const allProjects = [
@@ -22,10 +22,11 @@ const allProjects = [
     testimonial: "Zero Theorem delivered a product that exceeded all our expectations.",
     githubUrl: "https://github.com/abbeyzerotheorem/MOVIEREC",
     liveUrl: "https://movierecs-iota.vercel.app/home",
+    dribbbleUrl: "#",
   },
   {
     id: "portfolio-2",
-    title: "Project Beta",
+    title: "Fusion Hair",
     category: "UI/UX",
     imageUrl: "https://i.pinimg.com/736x/2e/e0/a0/2ee0a0daf7642e938cc0a299b819bf60.jpg",
     imageHint: "web dashboard",
@@ -35,6 +36,7 @@ const allProjects = [
     testimonial: "The team's dedication and attention to detail were phenomenal.",
     githubUrl: "#",
     liveUrl: "#",
+    dribbbleUrl: "https://dribbble.com/abbey0",
   },
   {
     id: "portfolio-3",
@@ -48,6 +50,7 @@ const allProjects = [
     testimonial: "I was impressed by their streamlined process and constant communication.",
     githubUrl: "#",
     liveUrl: "#",
+    dribbbleUrl: "https://dribbble.com/abbey0",
   },
   {
     id: "portfolio-4",
@@ -61,6 +64,7 @@ const allProjects = [
     testimonial: "They are not just a vendor, but a true partner in our success.",
     githubUrl: "#",
     liveUrl: "#",
+    dribbbleUrl: "#",
   },
   {
     id: "portfolio-5",
@@ -74,6 +78,7 @@ const allProjects = [
     testimonial: "Their expertise in both design and engineering is unparalleled.",
     githubUrl: "#",
     liveUrl: "#",
+    dribbbleUrl: "https://dribbble.com/abbey0",
   },
   {
     id: "portfolio-6",
@@ -87,6 +92,7 @@ const allProjects = [
     testimonial: "They truly understood our vision and brought it to life with incredible skill.",
     githubUrl: "#",
     liveUrl: "#",
+    dribbbleUrl: "https://dribbble.com/abbey0",
   },
   
 ];
@@ -213,14 +219,24 @@ export default function PortfolioGallery() {
                                 <p className="text-sm text-muted-foreground mt-1">{selectedProject.category}</p>
 
                                 <div className="flex items-center gap-4 mt-4">
-                                    <Link href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                                        <Github className="w-6 h-6" />
-                                        <span className="sr-only">GitHub</span>
-                                    </Link>
-                                    <Link href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                                        <ExternalLink className="w-6 h-6" />
-                                        <span className="sr-only">Live Site</span>
-                                    </Link>
+                                    {selectedProject.githubUrl && selectedProject.githubUrl !== "#" && (
+                                        <Link href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                                            <Github className="w-6 h-6" />
+                                            <span className="sr-only">GitHub</span>
+                                        </Link>
+                                    )}
+                                    {selectedProject.liveUrl && selectedProject.liveUrl !== "#" && (
+                                        <Link href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                                            <ExternalLink className="w-6 h-6" />
+                                            <span className="sr-only">Live Site</span>
+                                        </Link>
+                                    )}
+                                    {selectedProject.dribbbleUrl && selectedProject.dribbbleUrl !== "#" && (
+                                        <Link href={selectedProject.dribbbleUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                                            <Dribbble className="w-6 h-6" />
+                                            <span className="sr-only">Dribbble</span>
+                                        </Link>
+                                    )}
                                 </div>
 
                                 <div className="mt-8 space-y-6 text-foreground/90">
