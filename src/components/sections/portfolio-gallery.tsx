@@ -12,18 +12,16 @@ import Link from 'next/link';
 const allProjects = [
   {
     id: "portfolio-1",
-    title: "Project Alpha",
+    title: "MovieRec",
     category: "Web Dev",
     imageUrl: "https://i.pinimg.com/736x/f7/eb/cd/f7ebcd1c045307c02255cf5477fb94f7.jpg",
     imageHint: "abstract network",
     width: 800,
     height: 600,
-    challenge: "To create a scalable and performant web application for data visualization.",
-    solution: "We built a custom solution using Next.js and D3.js, creating an interactive and intuitive dashboard.",
-    result: "The new platform increased user engagement by 150% and reduced data processing time by 80%.",
+    description: "A scalable and performant web application for data visualization, built with Next.js and D3.js. The interactive dashboard design led to a 150% increase in user engagement and an 80% reduction in data processing time.",
     testimonial: "Zero Theorem delivered a product that exceeded all our expectations.",
-    githubUrl: "#",
-    liveUrl: "#",
+    githubUrl: "https://github.com/abbeyzerotheorem/MOVIEREC",
+    liveUrl: "https://movierecs-iota.vercel.app/home",
   },
   {
     id: "portfolio-2",
@@ -33,9 +31,7 @@ const allProjects = [
     imageHint: "web dashboard",
     width: 800,
     height: 1200,
-    challenge: "To redesign a complex enterprise software to be more user-friendly and modern.",
-    solution: "Our team conducted extensive user research and created a design system that streamlined the user experience.",
-    result: "The redesign led to a 75% reduction in user errors and a 90% satisfaction score.",
+    description: "A complete UI/UX redesign for a complex enterprise software. Through extensive user research and a new design system, we streamlined the user experience, resulting in a 75% reduction in user errors and a 90% user satisfaction score.",
     testimonial: "The team's dedication and attention to detail were phenomenal.",
     githubUrl: "#",
     liveUrl: "#",
@@ -48,9 +44,7 @@ const allProjects = [
     imageHint: "mobile interface",
     width: 800,
     height: 600,
-    challenge: "To create a memorable brand identity for a new startup in a crowded market.",
-    solution: "We developed a unique brand strategy, logo, and visual language that resonated with the target audience.",
-    result: "The new brand helped the startup secure $2M in seed funding and gain significant market traction.",
+    description: "A comprehensive branding project for a new startup. We developed a unique brand strategy, logo, and visual language that resonated with the target audience, helping them secure $2M in seed funding.",
     testimonial: "I was impressed by their streamlined process and constant communication.",
     githubUrl: "#",
     liveUrl: "#",
@@ -63,9 +57,7 @@ const allProjects = [
     imageHint: "data visualization",
     width: 800,
     height: 1000,
-    challenge: "To build a high-traffic e-commerce platform with a seamless checkout experience.",
-    solution: "We leveraged Shopify's API with a custom Next.js frontend for maximum flexibility and performance.",
-    result: "The new site handles 10,000 concurrent users and has a 20% higher conversion rate.",
+    description: "A high-traffic e-commerce platform built with a custom Next.js frontend and Shopify's API. The solution provides maximum flexibility and performance, handling 10,000 concurrent users and boosting conversion rates by 20%.",
     testimonial: "They are not just a vendor, but a true partner in our success.",
     githubUrl: "#",
     liveUrl: "#",
@@ -78,9 +70,7 @@ const allProjects = [
     imageHint: "mobile app design",
     width: 800,
     height: 800,
-    challenge: "To design a mobile app for a fitness brand that is both motivating and easy to use.",
-    solution: "We used gamification and a clean, minimalist interface to create an engaging user experience.",
-    result: "The app achieved 1 million downloads in its first year with a 4.9-star rating.",
+    description: "A mobile fitness app designed for motivation and ease of use. By implementing gamification and a clean, minimalist UI, the app achieved 1 million downloads in its first year and a 4.9-star rating.",
     testimonial: "Their expertise in both design and engineering is unparalleled.",
     githubUrl: "#",
     liveUrl: "#",
@@ -93,9 +83,7 @@ const allProjects = [
     imageHint: "brand guidelines",
     width: 800,
     height: 600,
-    challenge: "To rebrand a legacy company to appeal to a younger demographic.",
-    solution: "We created a bold, modern brand identity with a vibrant color palette and a fresh tone of voice.",
-    result: "The rebrand led to a 300% increase in social media engagement from the target demographic.",
+    description: "A bold rebranding for a legacy company to connect with a younger audience. We created a modern brand identity with a vibrant color palette and a fresh tone of voice, leading to a 300% increase in social media engagement.",
     testimonial: "They truly understood our vision and brought it to life with incredible skill.",
     githubUrl: "#",
     liveUrl: "#",
@@ -105,7 +93,7 @@ const allProjects = [
 
 const filters = ["All", "Web Dev", "UI/UX", "Branding"];
 
-const PortfolioItem = ({ project, onOpen }: { project: typeof allProjects[0], onOpen: (project: typeof allProjects[0]) => void }) => (
+const PortfolioItem = ({ project, onOpen }: { project: (typeof allProjects)[0], onOpen: (project: (typeof allProjects)[0]) => void }) => (
     <motion.div
         layout
         initial={{ opacity: 0, scale: 0.8 }}
@@ -138,7 +126,7 @@ const PortfolioItem = ({ project, onOpen }: { project: typeof allProjects[0], on
 
 export default function PortfolioGallery() {
   const [activeFilter, setActiveFilter] = useState("All");
-  const [selectedProject, setSelectedProject] = useState<typeof allProjects[0] | null>(null);
+  const [selectedProject, setSelectedProject] = useState<(typeof allProjects)[0] | null>(null);
 
   const filteredProjects = useMemo(() =>
     activeFilter === "All"
@@ -147,7 +135,7 @@ export default function PortfolioGallery() {
     [activeFilter]
   );
   
-  const handleOpen = (project: typeof allProjects[0]) => {
+  const handleOpen = (project: (typeof allProjects)[0]) => {
     setSelectedProject(project);
   };
   
@@ -207,7 +195,7 @@ export default function PortfolioGallery() {
                         <DialogHeader className="sr-only">
                           <DialogTitle>{selectedProject.title}</DialogTitle>
                           <DialogDescription>
-                            Detailed view of the project, including the challenge, solution, and result.
+                            Detailed view of the project.
                           </DialogDescription>
                         </DialogHeader>
                         <div className="grid grid-cols-1 md:grid-cols-2 max-h-[90vh]">
@@ -236,18 +224,7 @@ export default function PortfolioGallery() {
                                 </div>
 
                                 <div className="mt-8 space-y-6 text-foreground/90">
-                                    <div>
-                                        <h3 className="font-bold font-headline text-lg">The Challenge</h3>
-                                        <p className="mt-2 text-muted-foreground">{selectedProject.challenge}</p>
-                                    </div>
-                                     <div>
-                                        <h3 className="font-bold font-headline text-lg">Our Solution</h3>
-                                        <p className="mt-2 text-muted-foreground">{selectedProject.solution}</p>
-                                    </div>
-                                     <div>
-                                        <h3 className="font-bold font-headline text-lg">The Result</h3>
-                                        <p className="mt-2 text-muted-foreground">{selectedProject.result}</p>
-                                    </div>
+                                    <p className="text-muted-foreground">{selectedProject.description}</p>
                                     {selectedProject.testimonial && (
                                          <blockquote className="border-l-4 border-primary pl-4 italic text-foreground">
                                             "{selectedProject.testimonial}"
