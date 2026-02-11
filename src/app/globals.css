@@ -132,23 +132,6 @@
     pointer-events: none;
     z-index: -1;
   }
-  .about-page-gradient {
-    position: relative;
-    overflow: hidden;
-  }
-  .about-page-gradient::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:
-      radial-gradient(circle at 20% 30%, hsla(229, 84%, 60%, 0.05), transparent 30%),
-      radial-gradient(circle at 80% 70%, hsla(193, 86%, 62%, 0.05), transparent 30%);
-    pointer-events: none;
-    z-index: -1;
-  }
   .contact-page-gradient {
     position: relative;
     overflow: hidden;
@@ -200,16 +183,6 @@
       radial-gradient(ellipse 50% 40% at 50% 0%, hsla(var(--primary) / 0.05), transparent);
     pointer-events: none;
     z-index: -1;
-  }
-
-  .toolbox-chart-label {
-    @apply text-base;
-  }
-  
-  @media (max-width: 768px) {
-    .toolbox-chart-label {
-      @apply text-xs;
-    }
   }
 }
 
@@ -270,5 +243,3 @@
     @apply bg-gradient-to-r from-primary to-secondary;
   }
 }
-
-    
