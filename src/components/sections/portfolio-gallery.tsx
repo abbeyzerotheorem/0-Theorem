@@ -15,7 +15,7 @@ const allProjects = [
     id: "portfolio-1",
     title: "MovieRec",
     category: "Web Dev",
-    imageUrl: "https://i.pinimg.com/736x/f7/eb/cd/f7ebcd1c045307c02255cf5477fb94f7.jpg",
+    imageUrl: "https://picsum.photos/seed/p1/800/600",
     imageHint: "abstract network",
     width: 800,
     height: 600,
@@ -29,7 +29,7 @@ const allProjects = [
     id: "portfolio-2",
     title: "Fusion Hair",
     category: "UI/UX",
-    imageUrl: "https://i.pinimg.com/originals/e8/87/56/e8875691c95b356e87515b67c3b996b1.jpg",
+    imageUrl: "https://picsum.photos/seed/p2/800/600",
     imageHint: "web dashboard",
     width: 800,
     height: 600,
@@ -43,7 +43,7 @@ const allProjects = [
     id: "portfolio-3",
     title: "Project Gamma",
     category: "Branding",
-    imageUrl: "https://i.pinimg.com/736x/97/ce/06/97ce067c1c2121667abf79aa7b7ea7ca.jpg",
+    imageUrl: "https://picsum.photos/seed/p3/800/600",
     imageHint: "mobile interface",
     width: 800,
     height: 600,
@@ -57,7 +57,7 @@ const allProjects = [
     id: "portfolio-4",
     title: "Project Delta",
     category: "Web Dev",
-    imageUrl: "https://i.pinimg.com/736x/13/be/7c/13be7c0bc356486cc7583016fee59e42.jpg",
+    imageUrl: "https://picsum.photos/seed/p4/800/1000",
     imageHint: "data visualization",
     width: 800,
     height: 1000,
@@ -71,7 +71,7 @@ const allProjects = [
     id: "portfolio-5",
     title: "Project Epsilon",
     category: "UI/UX",
-    imageUrl: "https://i.pinimg.com/736x/5d/14/48/5d1448539c340b7bcbb46b3adefae841.jpg",
+    imageUrl: "https://picsum.photos/seed/p5/800/800",
     imageHint: "mobile app design",
     width: 800,
     height: 800,
@@ -85,7 +85,7 @@ const allProjects = [
     id: "portfolio-6",
     title: "Project Zeta",
     category: "Branding",
-    imageUrl: "https://i.pinimg.com/736x/b5/36/1a/b5361ac6e64fb1ecb7aac69e4c53624c.jpg",
+    imageUrl: "https://picsum.photos/seed/p6/800/600",
     imageHint: "brand guidelines",
     width: 800,
     height: 600,
@@ -202,7 +202,7 @@ export default function PortfolioGallery() {
                         <DialogHeader className="sr-only">
                           <DialogTitle>{selectedProject.title}</DialogTitle>
                           <DialogDescription>
-                            Detailed view of the project.
+                            A detailed view of the project.
                           </DialogDescription>
                         </DialogHeader>
                         <div className="grid grid-cols-1 md:grid-cols-2 max-h-[90vh]">
