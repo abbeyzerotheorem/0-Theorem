@@ -41,7 +41,7 @@ Getting this project up and running on your local machine is a breeze.
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/HARBBEY21166/0-theorem.git
+git clone https://github.com/abbeyzerotheorem/0-theorem.git
 cd 0-theorem
 ```
 
@@ -100,7 +100,7 @@ The project follows a standard Next.js App Router structure, designed for clarit
 
 We built Zero Theorem to be a community-driven project, and we welcome contributions of all kinds! Whether you're fixing a bug, improving a feature, or suggesting a new idea, your help is greatly appreciated.
 
--   **Found a Bug?** [Open an issue](https://github.com/HARBBEY21166/0-theorem/issues) and let us know.
+-   **Found a Bug?** [Open an issue](https://github.com/abbeyzerotheorem/0-theorem/issues) and let us know.
 -   **Have an Idea?** We'd love to hear it! Start a discussion.
 -   **Want to Contribute Code?** Fork the repository and submit a pull request.
 

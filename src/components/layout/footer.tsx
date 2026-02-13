@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Dribbble, Github, Linkedin, Twitter } from 'lucide-react';
@@ -10,7 +11,7 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { name: "Github", icon: <Github className="w-8 h-8" />, href: "https://github.com/HARBBEY21166" },
+  { name: "Github", icon: <Github className="w-8 h-8" />, href: "https://github.com/abbeyzerotheorem" },
   { name: "Twitter", icon: <Twitter className="w-8 h-8" />, href: "https://x.com/ZeroTheorem01?t=GaBiYlmbrPNi9tkTmm1l_Q&s=09" },
   { name: "LinkedIn", icon: <Linkedin className="w-8 h-8" />, href: "https://www.linkedin.com/in/abbey0" },
   { name: "Dribbble", icon: <Dribbble className="w-8 h-8" />, href: "https://dribbble.com/abbey0" },

@@ -20,7 +20,7 @@ const contactLinks = [
 ];
 
 const socialLinks = [
-    { label: "GitHub", icon: <Github className="w-8 h-8" />, href: "https://github.com/HARBBEY21166" },
+    { label: "GitHub", icon: <Github className="w-8 h-8" />, href: "https://github.com/abbeyzerotheorem" },
     { label: "Twitter", icon: <Twitter className="w-8 h-8" />, href: "https://x.com/ZeroTheorem01?t=GaBiYlmbrPNi9tkTmm1l_Q&s=09" },
     { label: "LinkedIn", icon: <Linkedin className="w-8 h-8" />, href: "https://www.linkedin.com/in/abbey0" },
     { label: "Dribbble", icon: <Dribbble className="w-8 h-8" />, href: "https://dribbble.com/abbey0" },
