@@ -1,21 +1,39 @@
+
+"use client"
+
 import { Marquee } from '@/components/ui/marquee';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 const logos = [
-  "React",
-  "Next.js",
-  "WordPress",
-  "Supabase",
-  "Firebase",
-  "MongoDB",
-  "Figma",
-  "Git / GitHub",
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
+  { name: "WordPress", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" },
+  { name: "Supabase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" },
+  { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+  { name: "Figma", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+  { name: "Tailwind CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
 ];
 
-const PlaceholderLogo = ({ name }: { name: string }) => (
-  <div className="flex items-center justify-center h-10 text-2xl font-bold text-foreground/40 font-headline">
-    {name}
-  </div>
-);
+
+const TechLogo = ({ name, logo }: { name: string; logo: string }) => (
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger asChild>
+            <img src={logo} alt={name} className="h-10 w-auto" />
+        </TooltipTrigger>
+        <TooltipContent>
+          <p>{name}</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+  );
 
 export default function TrustBar() {
   return (
@@ -26,9 +44,9 @@ export default function TrustBar() {
         </p>
         <div className="relative">
           <Marquee pauseOnHover className="[--duration:60s]">
-            {logos.map((name) => (
-              <div key={name} className="w-48 h-12 flex items-center justify-center">
-                 <PlaceholderLogo name={name} />
+            {logos.map((tech) => (
+              <div key={tech.name} className="w-48 h-12 flex items-center justify-center">
+                 <TechLogo name={tech.name} logo={tech.logo} />
               </div>
             ))}
           </Marquee>

@@ -27,7 +27,7 @@ const projects = [
     category: "UI/UX",
     description: "A high-contrast, dark-mode landing page designed to position the salon as a high-end, modern establishment.",
     href: "/portfolio",
-    imageUrl: "https://picsum.photos/seed/fusionhair/800/600",
+    imageUrl: "/projects/fusion-salon.jpg",
     imageHint: "salon website"
   },
 ];
