@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useRef } from 'react';
@@ -68,7 +67,7 @@ export default function Services() {
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {whatIDo.map((service, index) => (
-            <div key={index} ref={el => cardsRef.current[index] = el} className="opacity-0">
+            <div key={index} ref={el => { cardsRef.current[index] = el; }} className="opacity-0 animate-fade-in md:opacity-100">
                 <Card className="h-full bg-card/50 hover:bg-card/80 transition-colors duration-300 p-4">
                 <CardHeader className="flex-row items-center gap-4 pb-4">
                     <div className="text-primary bg-primary/10 p-3 rounded-lg">{service.icon}</div>
