@@ -3,7 +3,6 @@
 
 import { useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -15,17 +14,21 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     id: "portfolio-1",
-    title: "WanderUnion",
-    category: "UI/UX Design",
-    description: "UI/UX design for a travel platform prototype, focused on simplifying user onboarding and improving usability.",
-    href: "/portfolio"
+    title: "MovieRec",
+    category: "Web Dev",
+    description: "A full-stack streaming discovery platform using Next.js 14 for optimal performance and SEO.",
+    href: "/portfolio",
+    imageUrl: "/projects/MovieRec.jpg",
+    imageHint: "movie streaming app"
   },
   {
     id: "portfolio-2",
-    title: "Mike Hairstylist",
-    category: "WordPress Website",
-    description: "Designed and built a responsive WordPress landing page to showcase services and improve online presence.",
-    href: "/portfolio"
+    title: "Fusion Hair",
+    category: "UI/UX",
+    description: "A high-contrast, dark-mode landing page designed to position the salon as a high-end, modern establishment.",
+    href: "/portfolio",
+    imageUrl: "https://picsum.photos/seed/fusionhair/800/600",
+    imageHint: "salon website"
   },
 ];
 
@@ -63,20 +66,17 @@ export default function Portfolio() {
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project, index) => {
-            const imageData = PlaceHolderImages.find(p => p.id === project.id);
             return (
               <div key={project.id} ref={(el) => { projectsRef.current[index] = el; }} className="opacity-0 md:opacity-100 animate-fade-in">
                 <Link href={project.href} className="block group relative overflow-hidden rounded-lg shadow-xl">
-                  {imageData && (
-                    <Image
-                      src={imageData.imageUrl}
-                      alt={project.title}
-                      width={800}
-                      height={600}
-                      data-ai-hint={imageData.imageHint}
-                      className="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 ease-in-out group-hover:scale-105"
-                    />
-                  )}
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.title}
+                    width={800}
+                    height={600}
+                    data-ai-hint={project.imageHint}
+                    className="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-500 ease-in-out group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                   <div className="absolute inset-0 p-6 flex flex-col justify-end translate-y-1/4 group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
                       <p className="text-sm text-secondary">{project.category}</p>
