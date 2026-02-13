@@ -65,7 +65,7 @@ export default function Portfolio() {
           {projects.map((project, index) => {
             const imageData = PlaceHolderImages.find(p => p.id === project.id);
             return (
-              <div key={project.id} ref={el => projectsRef.current[index] = el} className="opacity-0 md:opacity-100 animate-fade-in">
+              <div key={project.id} ref={(el) => { projectsRef.current[index] = el; }} className="opacity-0 md:opacity-100 animate-fade-in">
                 <Link href={project.href} className="block group relative overflow-hidden rounded-lg shadow-xl">
                   {imageData && (
                     <Image
