@@ -1,6 +1,6 @@
 # 🚀 Zero Theorem - Next.js Portfolio & Agency Template
 
-![Zero Theorem](https://i.pinimg.com/1200x/78/a6/97/78a6977314662fe64f69898c4055c722.jpg)
+![Zero Theorem](/public/Homepage)
 
 Welcome to **Zero Theorem!** This is a beautifully designed, production-ready starter template for modern digital agencies, studios, and freelancers. It's built with the best of the modern web: **Next.js, TypeScript, Tailwind CSS, and ShadCN UI**, and brought to life with silky-smooth animations powered by **GSAP**.
 
