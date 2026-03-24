@@ -141,9 +141,9 @@ const pricingData = {
     icon: <Palette className="w-5 h-5 mr-2" />,
     accentColor: "yellow", // Custom color, will need to be handled
     packages: [
-      { name: "Logo Design", price: "R 250", description: "", features: [], delivery: "" },
-      { name: "Business Card Design", price: "R 350", description: "", features: [], delivery: "" },
-      { name: "Flyer / Poster Design", price: "R 350", description: "", features: [], delivery: "" },
+      { name: "Logo Design", price: "R 950", description: "", features: [], delivery: "" },
+      { name: "Business Card Design", price: "R 450", description: "", features: [], delivery: "" },
+      { name: "Flyer / Poster Design", price: "R 450", description: "", features: [], delivery: "" },
       {
         name: "Full Brand Kit",
         price: "R 1,000",
