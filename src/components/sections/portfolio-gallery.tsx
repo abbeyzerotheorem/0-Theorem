@@ -137,6 +137,20 @@ const allProjects = [
     liveUrl: "https://apex-find.vercel.app/",
     dribbbleUrl: "#",
   },
+  {
+    id: "portfolio-10",
+    title: "Designer Knight",
+    category: "Web Dev",
+    imageUrl: "/projects/Designer-Knight.png",
+    imageHint: "Portfolio",
+    width: 800,
+    height: 600,
+    description: "This is the source code for the personal portfolio of Muhammad Taha, a graphic designer also known as 'Designer Knight'. The site is built with modern web technologies to be fast, beautiful, and engaging. It features a clean, minimalist design with smooth animations and a responsive layout that looks great on all devices. The portfolio showcases Muhammad's work in graphic design, UI/UX, and branding, providing an interactive experience for visitors to explore his projects and get in touch.",
+    testimonial: "",
+    githubUrl: "https://github.com/abbeyzerotheorem/Muhammad-Portfolio",
+    liveUrl: "https://muhammad-ten.vercel.app/",
+    dribbbleUrl: "#",
+  },
 ];
 
 const filters = ["All", "Web Dev", "UI/UX", "Branding"];
