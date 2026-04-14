@@ -95,6 +95,20 @@ const allProjects = [
     liveUrl: "#",
     dribbbleUrl: "https://dribbble.com/shots/27079745-ChocoCroissant-High-Conversion-Social-Media-Creative?new_shot_upload=true&utm_source=Clipboard_Shot&utm_campaign=abbey0&utm_content=ChocoCroissant%20%E2%80%93%20High-Conversion%20Social%20Media%20Creative&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=abbey0&utm_content=ChocoCroissant%20%E2%80%93%20High-Conversion%20Social%20Media%20Creative&utm_medium=Social_Share",
   },
+   {
+    id: "portfolio-7",
+    title: "Gusto",
+    category: "Web Dev",
+    imageUrl: "/projects/gusto.png",
+    imageHint: "restaurant",
+    width: 800,
+    height: 600,
+    description: "🍽️ Gusto Restaurant - Frontend A modern, responsive restaurant website built with React and TypeScript, featuring beautiful gradients, smooth animations, and seamless user authentication.",
+    testimonial: "",
+    githubUrl: "https://github.com/abbeyzerotheorem/Gusto",
+    liveUrl: "https://gusto-flame.vercel.app/",
+    dribbbleUrl: "#",
+  },
   
 ];
 
