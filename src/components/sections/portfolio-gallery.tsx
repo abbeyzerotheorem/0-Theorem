@@ -64,7 +64,7 @@ const allProjects = [
     description: "I developed a custom-tailored WordPress environment designed for high conversion and local SEO dominance.Implemented a dual-action CTA (Book Appointment / WhatsApp) to capture both high-intent users and those needing a quick consultation.",
     testimonial: "A robust, professional digital headquarters that bridges the gap between social media discovery and a chair appointment. By moving the business from a basic landing page to a functional service platform, I provided the client with a 24/7 automated booking assistant.",
     githubUrl: "#",
-    liveUrl: "https://mikehairstylist.lovestoblog.com/?i=1",
+    liveUrl: "https://mikebarber.co.za/",
     dribbbleUrl: "#",
   },
   {
