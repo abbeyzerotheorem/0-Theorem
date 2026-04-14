@@ -123,7 +123,20 @@ const allProjects = [
     liveUrl: "https://ben-designs-nu.vercel.app/",
     dribbbleUrl: "#",
   },
-  
+   {
+    id: "portfolio-9",
+    title: "Apex Find",
+    category: "Web Dev",
+    imageUrl: "/projects/apexfind.png",
+    imageHint: "Real Estate",
+    width: 800,
+    height: 600,
+    description: "ApexFind is a modern Nigerian real estate discovery platform built with Next.js, Firebase, Tailwind CSS, and GenKit AI. The app is designed to help buyers, renters, agents, and property professionals explore listings, compare homes, connect with agents, and generate instant valuations.",
+    testimonial: "",
+    githubUrl: "https://github.com/abbeyzerotheorem/ApexFind",
+    liveUrl: "https://apex-find.vercel.app/",
+    dribbbleUrl: "#",
+  },
 ];
 
 const filters = ["All", "Web Dev", "UI/UX", "Branding"];
