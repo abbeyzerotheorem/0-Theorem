@@ -109,6 +109,20 @@ const allProjects = [
     liveUrl: "https://gusto-flame.vercel.app/",
     dribbbleUrl: "#",
   },
+   {
+    id: "portfolio-8",
+    title: "Benedict Portfolio",
+    category: "Web Dev",
+    imageUrl: "/projects/ben-portfolio.png",
+    imageHint: "Portfolio",
+    width: 800,
+    height: 600,
+    description: "A premium, interactive, and fully responsive portfolio website built for Benedict Oyelewo showcasing his expertise as a Frontend Web Developer, Graphic/UI Designer, and Video Editor.",
+    testimonial: "",
+    githubUrl: "https://github.com/abbeyzerotheorem/ben-designs",
+    liveUrl: "https://ben-designs-nu.vercel.app/",
+    dribbbleUrl: "#",
+  },
   
 ];
 
