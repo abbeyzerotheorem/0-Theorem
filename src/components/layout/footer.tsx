@@ -71,8 +71,8 @@ export default function Footer() {
 											: '/zero-theorem-black.svg'
 									}
 									alt="Zero Theorem Logo"
-									width={300}
-									height={300}
+									width={150}
+									height={150}
 								/>
 							)}
 						</Link>

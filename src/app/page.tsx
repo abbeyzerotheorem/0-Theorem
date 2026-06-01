@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Zero Theorem',
     images: [
       {
-        url: 'https://i.pinimg.com/1200x/78/a6/97/78a6977314662fe64f69898c4055c722.jpg', // Replace with your actual OG image
+        url: '/zero-theorem-hero.PNG', // Replace with your actual OG image
         width: 1200,
         height: 630,
       },
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Zero Theorem | Web Developer & Designer Studio',
     description: 'Crafting responsive, user-focused websites and apps for startups and small businesses.',
-     images: ['https://i.pinimg.com/1200x/78/a6/97/78a6977314662fe64f69898c4055c722.jpg'], // Replace with your actual Twitter image
+     images: ['/zero-theorem-hero.PNG'], // Replace with your actual Twitter image
   },
   icons: {
-    icon: '/zero-theorem-blue.svg',
-    shortcut: '/zero-theorem-blue.svg',
-    apple: '/zero-theorem-blue.svg',
+    icon: '/zero-theorem-black.svg',
+    shortcut: '/zero-theorem-black.svg',
+    apple: '/zero-theorem-black.svg',
   },
   robots: {
     index: true,
